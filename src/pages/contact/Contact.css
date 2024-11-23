@@ -1,0 +1,19 @@
+.icons {
+  display: flex;
+  flex-direction: column;
+  margin-top: 200px;
+  gap: 10px;
+  margin-left: 10px;
+}
+
+.icons > div > img {
+  width: 30px;
+  height: 30px;
+  margin-right: 15px;
+}
+
+.icons > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
