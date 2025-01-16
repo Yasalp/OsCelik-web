@@ -1,0 +1,74 @@
+.animated-text-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 60px;
+  }
+  
+  .animated-text-wrapper {
+    text-align: center;
+    position: relative;
+    width: 100%;
+  }
+  
+  .animated-text {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    padding: 0 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    transition: all 0.5s ease;
+    white-space: normal;
+  }
+  
+  .animated-text {
+    font-size: 1.5rem;
+  }
+  
+  @media (min-width: 768px) {
+    .animated-text {
+      font-size: 2.25rem; /* Medium screens */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .animated-text {
+      font-size: 3rem; /* Large screens */
+    }
+  }
+  
+  .animated-text.hidden {
+    opacity: 0;
+    transform: translate(-50%, 2rem);
+  }
+  
+  .animated-text.visible {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+  
+  .animated-text.scaling {
+    transform: translate(-50%, 0) scale(1.05);
+  }
+  
+  .animated-text.scaling {
+    animation: scaleUp 0.5s ease;
+  }
+  
+  @keyframes scaleUp {
+    0% {
+      transform: translate(-50%, 0) scale(1);
+    }
+    50% {
+      transform: translate(-50%, 0) scale(1.05);
+    }
+    100% {
+      transform: translate(-50%, 0) scale(1);
+    }
+  }
