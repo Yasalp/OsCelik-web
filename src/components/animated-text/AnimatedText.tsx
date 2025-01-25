@@ -1,7 +1,13 @@
-import React, { useEffect, useState } from "react";
+/* eslint-disable react-hooks/rules-of-hooks */
+import { useEffect, useState } from "react";
 import "./AnimatedText.css";
 
-const AnimatedText = ({ texts = [], interval = 3000 }) => {
+interface AnimatedTextProps {
+  texts?: string[];
+  interval?: number;
+}
+
+const AnimatedText = ({ texts = [], interval = 3000 }: AnimatedTextProps) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
 
