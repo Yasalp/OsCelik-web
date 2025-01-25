@@ -1,30 +1,42 @@
-import React from "react";
 import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import "./CustomSlider.css";
-import logo from "../../assets/logo.png";
-import instegram from "../../assets/instagram.png";
-import whatsapp from "../../assets/whatsapp.png";
-import telephone from "../../assets/telephone-call.png";
 
-interface CustomSliderProps {
-  images: [{ id: number; src: string; alt: string }];
+interface Slide {
+  image: string;
+  title: string;
+  description: string;
 }
 
-const CustomSlider = ({ images }: CustomSliderProps) => {
+interface CustomSliderProps {
+  slides: Slide[];
+}
+
+const CustomSlider = ({ slides }: CustomSliderProps) => {
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 8000,
+    arrows: true,
   };
 
   return (
     <div className="slider-container">
       <Slider {...settings}>
-        {images.map((image) => (
-          <div key={image.id}>
-            <img src={image.src} alt={image.alt} className="slider-image" />
+        {slides.map((slide, index) => (
+          <div key={index} className="slide">
+            <h2 className="slide-title">{slide.title}</h2>
+            <img
+              src={slide.image}
+              alt="Not found image"
+              className="slider-image"
+            />
+            <p className="slide-description">{slide.description}</p>
           </div>
         ))}
       </Slider>
