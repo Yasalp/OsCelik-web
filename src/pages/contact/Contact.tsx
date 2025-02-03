@@ -2,6 +2,7 @@ import { FaInstagram, FaWhatsapp, FaPhoneAlt } from "react-icons/fa";
 
 import "./Contact.css";
 
+// İletişim
 const Contact = () => {
   return (
     <div className="contact-container">
