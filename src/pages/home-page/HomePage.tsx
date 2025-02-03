@@ -10,6 +10,7 @@ const texts = [
   "Bizimle iletişime geçin!",
 ];
 
+// Anasayfa
 const HomePage = () => {
   return (
     <div className="container">

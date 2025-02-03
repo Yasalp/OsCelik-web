@@ -30,6 +30,7 @@ const slides = [
   },
 ];
 
+// Projelerimiz
 const Project = () => {
   return (
     <div className="project-container">
