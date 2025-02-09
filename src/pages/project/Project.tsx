@@ -30,7 +30,7 @@ const slides = [
   },
 ];
 
-// Projelerimiz
+// Projelerimiz sayfasında düzenlemeler yaptım
 const Project = () => {
   return (
     <div className="project-container">
