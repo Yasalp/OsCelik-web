@@ -1,7 +1,6 @@
 import "./Project.css";
 import CustomSlider from "../../components/custom-slider/CustomSlider";
 
-import image2 from "../../assets/images/anahtar-teslim.jpeg";
 import hafifCelikVilla from "../../assets/images/hafif-celik-villa.jpg";
 import isiYalitimi from "../../assets/images/isiyalitimi.jpg"
 import projectHome from "../../assets/images/project-home.png";
