@@ -33,7 +33,9 @@ const AnimatedText = ({ texts = [], interval = 3000 }: AnimatedTextProps) => {
         {texts.map((text, index) => (
           <span
             key={index}
-            className={`animated-text ${index === currentIndex ? "visible" : "hidden"} 
+            className={`animated-text ${
+              index === currentIndex ? "visible" : "hidden"
+            } 
               ${isAnimating ? "scaling" : ""}`}
           >
             {text}
