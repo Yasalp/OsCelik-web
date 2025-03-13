@@ -1,0 +1,9 @@
+Commit aratken: (kodları githuba gönderme)
+-> git add .                             
+Açıklama: Changes kısmındaki değişiklik olan dosyaları Staged kısmına alır (githuba gönderilecek dosyaların yeri)
+
+-> git commit -m "Yapılan geliştirme ile ilgili bilgi(mesaj)"
+Açıklama: Yapılan geliştirmenin mesajı
+
+-> git push origin
+Açıklama: Attığımız comitleri gihub reposuna gönderir

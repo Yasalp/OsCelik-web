@@ -36,9 +36,7 @@ const slides = [
 const Project = () => {
   return (
     <div className="project-container">
-      <div>
-        <CustomSlider slides={slides} />
-      </div>
+      <CustomSlider slides={slides} />
     </div>
   );
 };

@@ -84,7 +84,7 @@
 
   .modal-open {
     display: flex;
-    background-color: rgb(38, 29, 161);
+    background-color: rgb(89, 111, 153);
     width: 200px;
     position: absolute;
     right: 10px;
